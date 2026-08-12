@@ -5,7 +5,7 @@ const devArea = {
 };
 
 const client ={
-  service = "web",
+  service: "web",
 };
 
 
