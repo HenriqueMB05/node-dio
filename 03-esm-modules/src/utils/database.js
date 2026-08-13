@@ -1,3 +1,9 @@
+const databaseType = {
+  userType: "admin",
+  typeData: "datalocal",
+};
+
+
 async function connectToDatabase(dataname) {
   console.log(`conectando ${dataname}`);
 };
@@ -8,5 +14,6 @@ async function disconnectDatabase(){
 
 export {
   connectToDatabase, 
-  disconnectDatabase
+  disconnectDatabase,
+  databaseType,
 };
