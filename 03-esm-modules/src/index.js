@@ -1,5 +1,5 @@
-import * as db from "./utils/database.js";
+import {connectToDatabase, databaseType} from "./utils/database.js";
 
-db.connectToDatabase("mdbs");
+connectToDatabase("mdbs");
 
-
+console.log(databaseType.userType);
