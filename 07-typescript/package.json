@@ -1,0 +1,25 @@
+{
+  "name": "07-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "tsup src/",
+    "start:dev": "tsx --env-file=.env src/index.ts",
+    "start:watch": "tsx --env-file=.env watch src/index.ts",
+    "start:build": "tsc && --env-file=.env node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "env": "^0.0.2",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
